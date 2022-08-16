@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <section class="mx-auto">
+    <h1 class="text-5xl font-bold text-center mb-6">Let's get some <span class="text-blue-400">money....!!!!</span></h1>
+    <div class="grid lg:grid-cols-3 sm:grid-cols-12 p-3 gap-4 lg:w-9/12 mx-auto ">
+        <div class="bg-orange-400 p-3 rounded-xl">
+            <h3  class="text-m font-semibold">Deposit</h3>
+            <h4>$<span id="deposit-add">00</span></h4>
+        </div>
+        <div class="bg-blue-400 p-3 rounded-xl">
+            <h3 class="text-m font-semibold">Withdraw</h3>
+            <h4>$<span id="withdraw-add">00</span></h4>
+        </div>
+        <div class="bg-green-300 p-3 rounded-xl">
+            <h3 class="text-m font-semibold">Total Amount</h3>
+            <h4>$<span id="total" >00</span></h4>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-2 sm:grid-cols-12 p-3 gap-4 lg:w-7/12 mx-auto mt-32">
+        <div class="bg-light-200 p-3 rounded-xl bg-yellow-500">
+           <input class="px-12 py-2 rounded-md" type="text" name="" id="deposit-input" placeholder="$ Enter your deposit" >
+           <button id="deposit-btn" class="block bg-orange-400 p-2 mt-5 text-white rounded-md">Deposit</button>
+        </div>
+        <div class="bg-light-200 p-3 rounded-xl block bg-cyan-600 ">
+           <input class="px-5 py-2 rounded-md" type="text" name="" id="withdraw-input" placeholder="$ Enter Your Withdraw">
+           <button id="withdraw-btn" class="block bg-blue-400 p-2 mt-5 text-white rounded-md">Withdraw</button>
+        </div>
+        
+    </div>
+ </section>
+ <script src="style/deposit.js"></script>
+ <script src="style/withddraw.js"></script>
+</body>
+</html>
